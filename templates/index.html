@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Deployment</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+
+</head>
+
+<body>
+    <div class="intro">
+        <h1>
+            Predicting Optimal Career paths of students by <br>social media usage <br> Using Machine Learning.
+        </h1>
+        <p>Please Fill the form to know the prediction.</p>
+    </div>
+    <form method="POST" action="{{url_for('home')}}">
+        <label for="">Total time spent on social media: <br><br></label>
+        <input class="gender inp" name="a" type="text"><br>
+        <label for="">Time spent on education <br> <br></label>
+        <input class="ct inp" name="b" type="text"><br>
+        <label for="">Govt.exams <br></label>
+        <input class="Age inp" name="c" type="text"><br>
+        <label for="">Academic subjects: <br> <br></label>
+        <input class="tot inp" name="d" type="text"><br>
+        <label for="">Gaming: <br></label>
+        <input class="fd inp" name="e" type="text"><br>
+        <label for="">Mobile Gaming: <br></label>
+        <input class="wifi inp" name="f" type="text"><br>
+        <label for="">PC gaming: <br></label>
+        <input class="dep inp" name="g" type="text"><br>
+        <label for="">sports: <br></label>
+        <input class="online inp" name="h" type="text"><br>
+        <label for="">Science and technology: <br></label>
+        <input class="gate inp" name="i" type="text"><br>
+        <label for="">Coding: <br></label>
+        <input class="food inp" name="j" type="text"><br>
+        <label for="">Testing: <br></label>
+        <input class="board inp" name="k" type="text"><br>
+        <label for="">Data Science: <br></label>
+        <input class="seat inp" name="l" type="text"><br>
+        <label for="">Machine Learning: <br></label>
+        <input class="enter inp" name="m" type="text"><br>
+        <input type="submit" class="btn" , value="predict">
+    </form>
+</body>
+
+</html>
